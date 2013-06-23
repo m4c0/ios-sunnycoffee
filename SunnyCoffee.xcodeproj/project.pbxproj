@@ -1,0 +1,500 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		44CB32041777355E004B4F1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CB32031777355E004B4F1C /* Foundation.framework */; };
+		44CB32061777355E004B4F1C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CB32051777355E004B4F1C /* CoreGraphics.framework */; };
+		44CB32081777355E004B4F1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CB32071777355E004B4F1C /* UIKit.framework */; };
+		44CB320A1777355E004B4F1C /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CB32091777355E004B4F1C /* SpriteKit.framework */; };
+		44CB32101777355E004B4F1C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44CB320E1777355E004B4F1C /* InfoPlist.strings */; };
+		44CB32121777355E004B4F1C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CB32111777355E004B4F1C /* main.m */; };
+		44CB32161777355E004B4F1C /* SCFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CB32151777355E004B4F1C /* SCFAppDelegate.m */; };
+		44CB32191777355E004B4F1C /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44CB32171777355E004B4F1C /* Main_iPhone.storyboard */; };
+		44CB321C1777355E004B4F1C /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44CB321A1777355E004B4F1C /* Main_iPad.storyboard */; };
+		44CB321F1777355E004B4F1C /* SCFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CB321E1777355E004B4F1C /* SCFViewController.m */; };
+		44CB32221777355E004B4F1C /* SCFMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CB32211777355E004B4F1C /* SCFMyScene.m */; };
+		44CB32241777355E004B4F1C /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CB32231777355E004B4F1C /* Spaceship.png */; };
+		44CB32261777355E004B4F1C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44CB32251777355E004B4F1C /* Images.xcassets */; };
+		44CB322D1777355F004B4F1C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CB322C1777355F004B4F1C /* XCTest.framework */; };
+		44CB322E1777355F004B4F1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CB32031777355E004B4F1C /* Foundation.framework */; };
+		44CB322F1777355F004B4F1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CB32071777355E004B4F1C /* UIKit.framework */; };
+		44CB32371777355F004B4F1C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44CB32351777355F004B4F1C /* InfoPlist.strings */; };
+		44CB32391777355F004B4F1C /* SunnyCoffeeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CB32381777355F004B4F1C /* SunnyCoffeeTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44CB32301777355F004B4F1C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44CB31F81777355E004B4F1C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44CB31FF1777355E004B4F1C;
+			remoteInfo = SunnyCoffee;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		44CB32001777355E004B4F1C /* SunnyCoffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunnyCoffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		44CB32031777355E004B4F1C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		44CB32051777355E004B4F1C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		44CB32071777355E004B4F1C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		44CB32091777355E004B4F1C /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		44CB320D1777355E004B4F1C /* SunnyCoffee-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SunnyCoffee-Info.plist"; sourceTree = "<group>"; };
+		44CB320F1777355E004B4F1C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		44CB32111777355E004B4F1C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		44CB32131777355E004B4F1C /* SunnyCoffee-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SunnyCoffee-Prefix.pch"; sourceTree = "<group>"; };
+		44CB32141777355E004B4F1C /* SCFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFAppDelegate.h; sourceTree = "<group>"; };
+		44CB32151777355E004B4F1C /* SCFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCFAppDelegate.m; sourceTree = "<group>"; };
+		44CB32181777355E004B4F1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
+		44CB321B1777355E004B4F1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		44CB321D1777355E004B4F1C /* SCFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFViewController.h; sourceTree = "<group>"; };
+		44CB321E1777355E004B4F1C /* SCFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCFViewController.m; sourceTree = "<group>"; };
+		44CB32201777355E004B4F1C /* SCFMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFMyScene.h; sourceTree = "<group>"; };
+		44CB32211777355E004B4F1C /* SCFMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCFMyScene.m; sourceTree = "<group>"; };
+		44CB32231777355E004B4F1C /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
+		44CB32251777355E004B4F1C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		44CB322B1777355F004B4F1C /* SunnyCoffeeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SunnyCoffeeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		44CB322C1777355F004B4F1C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		44CB32341777355F004B4F1C /* SunnyCoffeeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SunnyCoffeeTests-Info.plist"; sourceTree = "<group>"; };
+		44CB32361777355F004B4F1C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		44CB32381777355F004B4F1C /* SunnyCoffeeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SunnyCoffeeTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44CB31FD1777355E004B4F1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44CB32061777355E004B4F1C /* CoreGraphics.framework in Frameworks */,
+				44CB32081777355E004B4F1C /* UIKit.framework in Frameworks */,
+				44CB320A1777355E004B4F1C /* SpriteKit.framework in Frameworks */,
+				44CB32041777355E004B4F1C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44CB32281777355F004B4F1C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44CB322D1777355F004B4F1C /* XCTest.framework in Frameworks */,
+				44CB322F1777355F004B4F1C /* UIKit.framework in Frameworks */,
+				44CB322E1777355F004B4F1C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		44CB31F71777355E004B4F1C = {
+			isa = PBXGroup;
+			children = (
+				44CB320B1777355E004B4F1C /* SunnyCoffee */,
+				44CB32321777355F004B4F1C /* SunnyCoffeeTests */,
+				44CB32021777355E004B4F1C /* Frameworks */,
+				44CB32011777355E004B4F1C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44CB32011777355E004B4F1C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44CB32001777355E004B4F1C /* SunnyCoffee.app */,
+				44CB322B1777355F004B4F1C /* SunnyCoffeeTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44CB32021777355E004B4F1C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				44CB32031777355E004B4F1C /* Foundation.framework */,
+				44CB32051777355E004B4F1C /* CoreGraphics.framework */,
+				44CB32071777355E004B4F1C /* UIKit.framework */,
+				44CB32091777355E004B4F1C /* SpriteKit.framework */,
+				44CB322C1777355F004B4F1C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		44CB320B1777355E004B4F1C /* SunnyCoffee */ = {
+			isa = PBXGroup;
+			children = (
+				44CB32141777355E004B4F1C /* SCFAppDelegate.h */,
+				44CB32151777355E004B4F1C /* SCFAppDelegate.m */,
+				44CB32171777355E004B4F1C /* Main_iPhone.storyboard */,
+				44CB321A1777355E004B4F1C /* Main_iPad.storyboard */,
+				44CB321D1777355E004B4F1C /* SCFViewController.h */,
+				44CB321E1777355E004B4F1C /* SCFViewController.m */,
+				44CB32201777355E004B4F1C /* SCFMyScene.h */,
+				44CB32211777355E004B4F1C /* SCFMyScene.m */,
+				44CB32231777355E004B4F1C /* Spaceship.png */,
+				44CB32251777355E004B4F1C /* Images.xcassets */,
+				44CB320C1777355E004B4F1C /* Supporting Files */,
+			);
+			path = SunnyCoffee;
+			sourceTree = "<group>";
+		};
+		44CB320C1777355E004B4F1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44CB320D1777355E004B4F1C /* SunnyCoffee-Info.plist */,
+				44CB320E1777355E004B4F1C /* InfoPlist.strings */,
+				44CB32111777355E004B4F1C /* main.m */,
+				44CB32131777355E004B4F1C /* SunnyCoffee-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44CB32321777355F004B4F1C /* SunnyCoffeeTests */ = {
+			isa = PBXGroup;
+			children = (
+				44CB32381777355F004B4F1C /* SunnyCoffeeTests.m */,
+				44CB32331777355F004B4F1C /* Supporting Files */,
+			);
+			path = SunnyCoffeeTests;
+			sourceTree = "<group>";
+		};
+		44CB32331777355F004B4F1C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				44CB32341777355F004B4F1C /* SunnyCoffeeTests-Info.plist */,
+				44CB32351777355F004B4F1C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44CB31FF1777355E004B4F1C /* SunnyCoffee */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44CB323C1777355F004B4F1C /* Build configuration list for PBXNativeTarget "SunnyCoffee" */;
+			buildPhases = (
+				44CB31FC1777355E004B4F1C /* Sources */,
+				44CB31FD1777355E004B4F1C /* Frameworks */,
+				44CB31FE1777355E004B4F1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SunnyCoffee;
+			productName = SunnyCoffee;
+			productReference = 44CB32001777355E004B4F1C /* SunnyCoffee.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44CB322A1777355F004B4F1C /* SunnyCoffeeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44CB323F1777355F004B4F1C /* Build configuration list for PBXNativeTarget "SunnyCoffeeTests" */;
+			buildPhases = (
+				44CB32271777355F004B4F1C /* Sources */,
+				44CB32281777355F004B4F1C /* Frameworks */,
+				44CB32291777355F004B4F1C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44CB32311777355F004B4F1C /* PBXTargetDependency */,
+			);
+			name = SunnyCoffeeTests;
+			productName = SunnyCoffeeTests;
+			productReference = 44CB322B1777355F004B4F1C /* SunnyCoffeeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44CB31F81777355E004B4F1C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = SCF;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Eduardo Costa";
+				TargetAttributes = {
+					44CB322A1777355F004B4F1C = {
+						TestTargetID = 44CB31FF1777355E004B4F1C;
+					};
+				};
+			};
+			buildConfigurationList = 44CB31FB1777355E004B4F1C /* Build configuration list for PBXProject "SunnyCoffee" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44CB31F71777355E004B4F1C;
+			productRefGroup = 44CB32011777355E004B4F1C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44CB31FF1777355E004B4F1C /* SunnyCoffee */,
+				44CB322A1777355F004B4F1C /* SunnyCoffeeTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44CB31FE1777355E004B4F1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44CB32241777355E004B4F1C /* Spaceship.png in Resources */,
+				44CB32261777355E004B4F1C /* Images.xcassets in Resources */,
+				44CB321C1777355E004B4F1C /* Main_iPad.storyboard in Resources */,
+				44CB32191777355E004B4F1C /* Main_iPhone.storyboard in Resources */,
+				44CB32101777355E004B4F1C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44CB32291777355F004B4F1C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44CB32371777355F004B4F1C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44CB31FC1777355E004B4F1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44CB32121777355E004B4F1C /* main.m in Sources */,
+				44CB32161777355E004B4F1C /* SCFAppDelegate.m in Sources */,
+				44CB321F1777355E004B4F1C /* SCFViewController.m in Sources */,
+				44CB32221777355E004B4F1C /* SCFMyScene.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44CB32271777355F004B4F1C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44CB32391777355F004B4F1C /* SunnyCoffeeTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44CB32311777355F004B4F1C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44CB31FF1777355E004B4F1C /* SunnyCoffee */;
+			targetProxy = 44CB32301777355F004B4F1C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		44CB320E1777355E004B4F1C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44CB320F1777355E004B4F1C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		44CB32171777355E004B4F1C /* Main_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44CB32181777355E004B4F1C /* Base */,
+			);
+			name = Main_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		44CB321A1777355E004B4F1C /* Main_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44CB321B1777355E004B4F1C /* Base */,
+			);
+			name = Main_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		44CB32351777355F004B4F1C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				44CB32361777355F004B4F1C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		44CB323A1777355F004B4F1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44CB323B1777355F004B4F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44CB323D1777355F004B4F1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SunnyCoffee/SunnyCoffee-Prefix.pch";
+				INFOPLIST_FILE = "SunnyCoffee/SunnyCoffee-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		44CB323E1777355F004B4F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SunnyCoffee/SunnyCoffee-Prefix.pch";
+				INFOPLIST_FILE = "SunnyCoffee/SunnyCoffee-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SPRITEKIT_TEXTURE_ATLAS_OUTPUT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		44CB32401777355F004B4F1C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SunnyCoffee.app/SunnyCoffee";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SunnyCoffee/SunnyCoffee-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SunnyCoffeeTests/SunnyCoffeeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		44CB32411777355F004B4F1C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SunnyCoffee.app/SunnyCoffee";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(SYSTEM_APPS_DIR)/Xcode5-DP.app/Contents/Developer/Library/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SunnyCoffee/SunnyCoffee-Prefix.pch";
+				INFOPLIST_FILE = "SunnyCoffeeTests/SunnyCoffeeTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44CB31FB1777355E004B4F1C /* Build configuration list for PBXProject "SunnyCoffee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44CB323A1777355F004B4F1C /* Debug */,
+				44CB323B1777355F004B4F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44CB323C1777355F004B4F1C /* Build configuration list for PBXNativeTarget "SunnyCoffee" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44CB323D1777355F004B4F1C /* Debug */,
+				44CB323E1777355F004B4F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		44CB323F1777355F004B4F1C /* Build configuration list for PBXNativeTarget "SunnyCoffeeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44CB32401777355F004B4F1C /* Debug */,
+				44CB32411777355F004B4F1C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44CB31F81777355E004B4F1C /* Project object */;
+}
