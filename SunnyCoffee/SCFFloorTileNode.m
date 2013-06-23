@@ -25,6 +25,7 @@
     if (player.hasActions) return;
     
     CGPoint pos = [self.parent convertPoint:self.position toNode:player.parent];
+    pos.y++;
     
     float timeX = 0.15 * ABS(pos.x - player.position.x);
     float timeY = 0.10 * ABS(pos.y - player.position.y);
