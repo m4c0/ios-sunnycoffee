@@ -9,6 +9,7 @@
 #import "SCFCoffeeShopScene.h"
 
 #import "SCFFloorTileNode.h"
+#import "SCFInteractiveNode.h"
 #import "SCFTiledNode.h"
 
 @implementation SCFCoffeeShopScene
@@ -26,6 +27,10 @@
         girl.position = CGPointMake(self.size.width / 2, self.size.height / 2);
         girl.size = CGSizeMake(1, 4);
         [self addChild:girl];
+        
+        SCFInteractiveNode * chest = [SCFInteractiveNode new];
+        chest.position = CGPointMake(2, 7);
+        [self addChild:chest];
     }
     return self;
 }
