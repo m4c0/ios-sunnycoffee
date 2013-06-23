@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		44059A951777764F005CD6A6 /* SCFFloorTileNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 44059A941777764F005CD6A6 /* SCFFloorTileNode.m */; };
 		44CB32041777355E004B4F1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CB32031777355E004B4F1C /* Foundation.framework */; };
 		44CB32061777355E004B4F1C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CB32051777355E004B4F1C /* CoreGraphics.framework */; };
 		44CB32081777355E004B4F1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CB32071777355E004B4F1C /* UIKit.framework */; };
@@ -40,6 +41,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		44059A931777764F005CD6A6 /* SCFFloorTileNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFFloorTileNode.h; sourceTree = "<group>"; };
+		44059A941777764F005CD6A6 /* SCFFloorTileNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFFloorTileNode.m; sourceTree = "<group>"; };
 		44CB32001777355E004B4F1C /* SunnyCoffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunnyCoffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44CB32031777355E004B4F1C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		44CB32051777355E004B4F1C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -129,7 +132,6 @@
 			isa = PBXGroup;
 			children = (
 				44CB3242177737FD004B4F1C /* Coffee Shop Scene */,
-				44CB3252177746BC004B4F1C /* Nodes */,
 				44CB32141777355E004B4F1C /* SCFAppDelegate.h */,
 				44CB32151777355E004B4F1C /* SCFAppDelegate.m */,
 				44CB321D1777355E004B4F1C /* SCFViewController.h */,
@@ -176,6 +178,7 @@
 		44CB3242177737FD004B4F1C /* Coffee Shop Scene */ = {
 			isa = PBXGroup;
 			children = (
+				44CB3252177746BC004B4F1C /* Nodes */,
 				44CB32431777381C004B4F1C /* SCFCoffeeShopScene.h */,
 				44CB32441777381C004B4F1C /* SCFCoffeeShopScene.m */,
 			);
@@ -185,6 +188,8 @@
 		44CB3252177746BC004B4F1C /* Nodes */ = {
 			isa = PBXGroup;
 			children = (
+				44059A931777764F005CD6A6 /* SCFFloorTileNode.h */,
+				44059A941777764F005CD6A6 /* SCFFloorTileNode.m */,
 				44CB3253177746DD004B4F1C /* SCFTiledNode.h */,
 				44CB3254177746DD004B4F1C /* SCFTiledNode.m */,
 			);
@@ -297,6 +302,7 @@
 				44CB32451777381C004B4F1C /* SCFCoffeeShopScene.m in Sources */,
 				44CB3255177746DD004B4F1C /* SCFTiledNode.m in Sources */,
 				44CB321F1777355E004B4F1C /* SCFViewController.m in Sources */,
+				44059A951777764F005CD6A6 /* SCFFloorTileNode.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -511,6 +517,7 @@
 				44CB323E1777355F004B4F1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		44CB323F1777355F004B4F1C /* Build configuration list for PBXNativeTarget "SunnyCoffeeTests" */ = {
 			isa = XCConfigurationList;
@@ -519,6 +526,7 @@
 				44CB32411777355F004B4F1C /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
