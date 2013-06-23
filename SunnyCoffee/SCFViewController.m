@@ -22,7 +22,7 @@
     
     // Create and configure the scene.
     SKScene * scene = [SCFCoffeeShopScene sceneWithSize:skView.bounds.size];
-    scene.scaleMode = SKSceneScaleModeAspectFill;
+    scene.scaleMode = SKSceneScaleModeAspectFit;
     
     // Present the scene.
     [skView presentScene:scene];

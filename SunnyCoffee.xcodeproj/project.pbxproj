@@ -24,6 +24,7 @@
 		44CB32371777355F004B4F1C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44CB32351777355F004B4F1C /* InfoPlist.strings */; };
 		44CB32391777355F004B4F1C /* SunnyCoffeeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CB32381777355F004B4F1C /* SunnyCoffeeTests.m */; };
 		44CB32451777381C004B4F1C /* SCFCoffeeShopScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CB32441777381C004B4F1C /* SCFCoffeeShopScene.m */; };
+		44CB324F17774339004B4F1C /* Character Cat Girl.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CB324E17774339004B4F1C /* Character Cat Girl.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,7 @@
 		44CB32381777355F004B4F1C /* SunnyCoffeeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SunnyCoffeeTests.m; sourceTree = "<group>"; };
 		44CB32431777381C004B4F1C /* SCFCoffeeShopScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFCoffeeShopScene.h; sourceTree = "<group>"; };
 		44CB32441777381C004B4F1C /* SCFCoffeeShopScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFCoffeeShopScene.m; sourceTree = "<group>"; };
+		44CB324E17774339004B4F1C /* Character Cat Girl.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Character Cat Girl.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,6 +130,7 @@
 				44CB321E1777355E004B4F1C /* SCFViewController.m */,
 				44CB32171777355E004B4F1C /* Main_iPhone.storyboard */,
 				44CB321A1777355E004B4F1C /* Main_iPad.storyboard */,
+				44CB324E17774339004B4F1C /* Character Cat Girl.png */,
 				44CB32251777355E004B4F1C /* Images.xcassets */,
 				44CB320C1777355E004B4F1C /* Supporting Files */,
 			);
@@ -250,6 +253,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44CB32261777355E004B4F1C /* Images.xcassets in Resources */,
+				44CB324F17774339004B4F1C /* Character Cat Girl.png in Resources */,
 				44CB321C1777355E004B4F1C /* Main_iPad.storyboard in Resources */,
 				44CB32191777355E004B4F1C /* Main_iPhone.storyboard in Resources */,
 				44CB32101777355E004B4F1C /* InfoPlist.strings in Resources */,
