@@ -15,14 +15,14 @@
 - (instancetype)initWithSize:(CGSize)size {
     if (self = [super initWithSize:size]) {
         SKSpriteNode * backTile = [SKSpriteNode spriteNodeWithImageNamed:@"Brown Block.png"];
-        backTile.size = CGSizeMake(1, 1);
+        backTile.size = CGSizeMake(1, 4);
         SCFTiledNode * back = [SCFTiledNode tileNodeWithNodeTile:backTile andDimensions:CGSizeMake(9, 5)];
         back.position = CGPointMake(self.size.width / 2, self.size.height / 2);
         [self addChild:back];
 
         SKSpriteNode * girl = [SKSpriteNode spriteNodeWithImageNamed:@"Character Cat Girl.png"];
         girl.position = CGPointMake(self.size.width / 2, self.size.height / 2);
-        girl.size = CGSizeMake(1, 1);
+        girl.size = CGSizeMake(1, 4);
         [self addChild:girl];
     }
     return self;

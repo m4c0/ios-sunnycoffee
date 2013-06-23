@@ -17,9 +17,9 @@
 - (id)initWithNodeTile:(SKNode *)node andDimensions:(CGSize)dim {
     if (self = [super init]) {
         for (float x = -dim.width / 2; x < dim.width / 2; x++) {
-            for (float y = -dim.height / 2; y < dim.height / 2; y++) {
+            for (float y = dim.height / 2; y >= -dim.height / 2; y--) {
                 SKNode * clone = [node copy];
-                clone.position = CGPointMake(x + 0.5, y + 0.5);
+                clone.position = CGPointMake(x + 0.5, 2 * (y - 0.5));
                 [self addChild:clone];
             }
         }
