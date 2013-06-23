@@ -10,6 +10,7 @@
 		44059A951777764F005CD6A6 /* SCFFloorTileNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 44059A941777764F005CD6A6 /* SCFFloorTileNode.m */; };
 		4479E9281777ACD200DA3F7B /* Chest Closed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4479E9271777ACD200DA3F7B /* Chest Closed.png */; };
 		4479E92B1777ADA700DA3F7B /* SCFInteractiveNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4479E92A1777ADA700DA3F7B /* SCFInteractiveNode.m */; };
+		4479E92E1777B2EB00DA3F7B /* SCFPlayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4479E92D1777B2EB00DA3F7B /* SCFPlayerNode.m */; };
 		44CB32041777355E004B4F1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CB32031777355E004B4F1C /* Foundation.framework */; };
 		44CB32061777355E004B4F1C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CB32051777355E004B4F1C /* CoreGraphics.framework */; };
 		44CB32081777355E004B4F1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CB32071777355E004B4F1C /* UIKit.framework */; };
@@ -48,6 +49,8 @@
 		4479E9271777ACD200DA3F7B /* Chest Closed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Chest Closed.png"; path = "../../../../../Downloads/PlanetCute PNG/Chest Closed.png"; sourceTree = "<group>"; };
 		4479E9291777ADA700DA3F7B /* SCFInteractiveNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFInteractiveNode.h; sourceTree = "<group>"; };
 		4479E92A1777ADA700DA3F7B /* SCFInteractiveNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFInteractiveNode.m; sourceTree = "<group>"; };
+		4479E92C1777B2EB00DA3F7B /* SCFPlayerNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFPlayerNode.h; sourceTree = "<group>"; };
+		4479E92D1777B2EB00DA3F7B /* SCFPlayerNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFPlayerNode.m; sourceTree = "<group>"; };
 		44CB32001777355E004B4F1C /* SunnyCoffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunnyCoffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44CB32031777355E004B4F1C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		44CB32051777355E004B4F1C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -198,6 +201,8 @@
 				44059A941777764F005CD6A6 /* SCFFloorTileNode.m */,
 				4479E9291777ADA700DA3F7B /* SCFInteractiveNode.h */,
 				4479E92A1777ADA700DA3F7B /* SCFInteractiveNode.m */,
+				4479E92C1777B2EB00DA3F7B /* SCFPlayerNode.h */,
+				4479E92D1777B2EB00DA3F7B /* SCFPlayerNode.m */,
 				44CB3253177746DD004B4F1C /* SCFTiledNode.h */,
 				44CB3254177746DD004B4F1C /* SCFTiledNode.m */,
 			);
@@ -307,6 +312,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				44CB32121777355E004B4F1C /* main.m in Sources */,
+				4479E92E1777B2EB00DA3F7B /* SCFPlayerNode.m in Sources */,
 				44CB32161777355E004B4F1C /* SCFAppDelegate.m in Sources */,
 				44CB32451777381C004B4F1C /* SCFCoffeeShopScene.m in Sources */,
 				4479E92B1777ADA700DA3F7B /* SCFInteractiveNode.m in Sources */,

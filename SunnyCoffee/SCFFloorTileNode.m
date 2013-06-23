@@ -8,6 +8,8 @@
 
 #import "SCFFloorTileNode.h"
 
+#import "SCFPlayerNode.h"
+
 @implementation SCFFloorTileNode
 
 - (id)init {
@@ -22,17 +24,11 @@
     if ([touches count] != 1) return;
     
     SKNode * player = [self.scene childNodeWithName:@"player"];
-    if (player.hasActions) return;
     
     CGPoint pos = [self.parent convertPoint:self.position toNode:player.parent];
     pos.y++;
     
-    float timeX = 0.15 * ABS(pos.x - player.position.x);
-    float timeY = 0.10 * ABS(pos.y - player.position.y);
-    
-    NSArray * actions = @[[SKAction moveToX:pos.x duration:timeX],
-                          [SKAction moveToY:pos.y duration:timeY]];
-    [player runAction:[SKAction sequence:actions]];
+    [(SCFPlayerNode *)player moveToPoint:pos];
 }
 
 @end

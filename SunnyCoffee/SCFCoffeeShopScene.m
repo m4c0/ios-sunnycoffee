@@ -10,6 +10,7 @@
 
 #import "SCFFloorTileNode.h"
 #import "SCFInteractiveNode.h"
+#import "SCFPlayerNode.h"
 #import "SCFTiledNode.h"
 
 @implementation SCFCoffeeShopScene
@@ -22,10 +23,8 @@
         back.position = CGPointMake(self.size.width / 2, self.size.height / 2);
         [self addChild:back];
 
-        SKSpriteNode * girl = [SKSpriteNode spriteNodeWithImageNamed:@"Character Cat Girl.png"];
-        girl.name = @"player";
+        SKSpriteNode * girl = [SCFPlayerNode new];
         girl.position = CGPointMake(self.size.width / 2, self.size.height / 2);
-        girl.size = CGSizeMake(1, 4);
         [self addChild:girl];
         
         SCFInteractiveNode * chest = [SCFInteractiveNode new];
