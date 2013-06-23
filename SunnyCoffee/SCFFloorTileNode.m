@@ -18,18 +18,20 @@
     return self;
 }
 
-- (void)touchesEnded:(NSSet *)touches withEvent:(UIEvent *)event {
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    if ([touches count] != 1) return;
+    
     SKNode * player = [self.scene childNodeWithName:@"player"];
-    if (!player.hasActions) {
-        CGPoint pos = [self.parent convertPoint:self.position toNode:player.parent];
-        
-        float timeX = 0.15 * ABS(pos.x - player.position.x);
-        float timeY = 0.10 * ABS(pos.y - player.position.y);
-        
-        NSArray * actions = @[[SKAction moveToX:pos.x duration:timeX],
-                              [SKAction moveToY:pos.y duration:timeY]];
-        [player runAction:[SKAction sequence:actions]];
-    }
+    if (player.hasActions) return;
+    
+    CGPoint pos = [self.parent convertPoint:self.position toNode:player.parent];
+    
+    float timeX = 0.15 * ABS(pos.x - player.position.x);
+    float timeY = 0.10 * ABS(pos.y - player.position.y);
+    
+    NSArray * actions = @[[SKAction moveToX:pos.x duration:timeX],
+                          [SKAction moveToY:pos.y duration:timeY]];
+    [player runAction:[SKAction sequence:actions]];
 }
 
 @end
