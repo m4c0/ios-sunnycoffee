@@ -17,14 +17,13 @@
 		44CB32191777355E004B4F1C /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44CB32171777355E004B4F1C /* Main_iPhone.storyboard */; };
 		44CB321C1777355E004B4F1C /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 44CB321A1777355E004B4F1C /* Main_iPad.storyboard */; };
 		44CB321F1777355E004B4F1C /* SCFViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CB321E1777355E004B4F1C /* SCFViewController.m */; };
-		44CB32221777355E004B4F1C /* SCFMyScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CB32211777355E004B4F1C /* SCFMyScene.m */; };
-		44CB32241777355E004B4F1C /* Spaceship.png in Resources */ = {isa = PBXBuildFile; fileRef = 44CB32231777355E004B4F1C /* Spaceship.png */; };
 		44CB32261777355E004B4F1C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44CB32251777355E004B4F1C /* Images.xcassets */; };
 		44CB322D1777355F004B4F1C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CB322C1777355F004B4F1C /* XCTest.framework */; };
 		44CB322E1777355F004B4F1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CB32031777355E004B4F1C /* Foundation.framework */; };
 		44CB322F1777355F004B4F1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CB32071777355E004B4F1C /* UIKit.framework */; };
 		44CB32371777355F004B4F1C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 44CB32351777355F004B4F1C /* InfoPlist.strings */; };
 		44CB32391777355F004B4F1C /* SunnyCoffeeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CB32381777355F004B4F1C /* SunnyCoffeeTests.m */; };
+		44CB32451777381C004B4F1C /* SCFCoffeeShopScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 44CB32441777381C004B4F1C /* SCFCoffeeShopScene.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,15 +52,14 @@
 		44CB321B1777355E004B4F1C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
 		44CB321D1777355E004B4F1C /* SCFViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFViewController.h; sourceTree = "<group>"; };
 		44CB321E1777355E004B4F1C /* SCFViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCFViewController.m; sourceTree = "<group>"; };
-		44CB32201777355E004B4F1C /* SCFMyScene.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SCFMyScene.h; sourceTree = "<group>"; };
-		44CB32211777355E004B4F1C /* SCFMyScene.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SCFMyScene.m; sourceTree = "<group>"; };
-		44CB32231777355E004B4F1C /* Spaceship.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Spaceship.png; sourceTree = "<group>"; };
 		44CB32251777355E004B4F1C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		44CB322B1777355F004B4F1C /* SunnyCoffeeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SunnyCoffeeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		44CB322C1777355F004B4F1C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		44CB32341777355F004B4F1C /* SunnyCoffeeTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SunnyCoffeeTests-Info.plist"; sourceTree = "<group>"; };
 		44CB32361777355F004B4F1C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		44CB32381777355F004B4F1C /* SunnyCoffeeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SunnyCoffeeTests.m; sourceTree = "<group>"; };
+		44CB32431777381C004B4F1C /* SCFCoffeeShopScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFCoffeeShopScene.h; sourceTree = "<group>"; };
+		44CB32441777381C004B4F1C /* SCFCoffeeShopScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFCoffeeShopScene.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,13 +121,11 @@
 		44CB320B1777355E004B4F1C /* SunnyCoffee */ = {
 			isa = PBXGroup;
 			children = (
+				44CB3242177737FD004B4F1C /* Coffee Shop Scene */,
 				44CB32141777355E004B4F1C /* SCFAppDelegate.h */,
 				44CB32151777355E004B4F1C /* SCFAppDelegate.m */,
 				44CB321D1777355E004B4F1C /* SCFViewController.h */,
 				44CB321E1777355E004B4F1C /* SCFViewController.m */,
-				44CB32201777355E004B4F1C /* SCFMyScene.h */,
-				44CB32211777355E004B4F1C /* SCFMyScene.m */,
-				44CB32231777355E004B4F1C /* Spaceship.png */,
 				44CB32171777355E004B4F1C /* Main_iPhone.storyboard */,
 				44CB321A1777355E004B4F1C /* Main_iPad.storyboard */,
 				44CB32251777355E004B4F1C /* Images.xcassets */,
@@ -165,6 +161,15 @@
 				44CB32351777355F004B4F1C /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		44CB3242177737FD004B4F1C /* Coffee Shop Scene */ = {
+			isa = PBXGroup;
+			children = (
+				44CB32431777381C004B4F1C /* SCFCoffeeShopScene.h */,
+				44CB32441777381C004B4F1C /* SCFCoffeeShopScene.m */,
+			);
+			name = "Coffee Shop Scene";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -244,7 +249,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				44CB32241777355E004B4F1C /* Spaceship.png in Resources */,
 				44CB32261777355E004B4F1C /* Images.xcassets in Resources */,
 				44CB321C1777355E004B4F1C /* Main_iPad.storyboard in Resources */,
 				44CB32191777355E004B4F1C /* Main_iPhone.storyboard in Resources */,
@@ -269,8 +273,8 @@
 			files = (
 				44CB32121777355E004B4F1C /* main.m in Sources */,
 				44CB32161777355E004B4F1C /* SCFAppDelegate.m in Sources */,
+				44CB32451777381C004B4F1C /* SCFCoffeeShopScene.m in Sources */,
 				44CB321F1777355E004B4F1C /* SCFViewController.m in Sources */,
-				44CB32221777355E004B4F1C /* SCFMyScene.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

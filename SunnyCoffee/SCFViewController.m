@@ -7,7 +7,8 @@
 //
 
 #import "SCFViewController.h"
-#import "SCFMyScene.h"
+
+#import "SCFCoffeeShopScene.h"
 
 @implementation SCFViewController
 
@@ -20,7 +21,7 @@
     skView.showsNodeCount = YES;
     
     // Create and configure the scene.
-    SKScene * scene = [SCFMyScene sceneWithSize:skView.bounds.size];
+    SKScene * scene = [SCFCoffeeShopScene sceneWithSize:skView.bounds.size];
     scene.scaleMode = SKSceneScaleModeAspectFill;
     
     // Present the scene.
@@ -33,9 +34,9 @@
 
 - (NSUInteger)supportedInterfaceOrientations {
     if ([[UIDevice currentDevice] userInterfaceIdiom] == UIUserInterfaceIdiomPhone) {
-        return UIInterfaceOrientationMaskAllButUpsideDown;
+        return UIInterfaceOrientationMaskLandscape;
     } else {
-        return UIInterfaceOrientationMaskAll;
+        return UIInterfaceOrientationMaskLandscape;
     }
 }
 
