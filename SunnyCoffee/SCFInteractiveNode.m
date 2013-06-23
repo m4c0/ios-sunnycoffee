@@ -28,7 +28,13 @@
     CGPoint pos = [self.parent convertPoint:self.position toNode:player.parent];
     pos.y -= 2;
     
-    [(SCFPlayerNode *)player moveToPoint:pos];
+    [(SCFPlayerNode *)player moveToPoint:pos completion:^{
+        SKScene * scene = [SKScene sceneWithSize:self.scene.size];
+
+        SKTransition * transition = [SKTransition pushWithDirection:SKTransitionDirectionLeft
+                                                           duration:0.3];
+        [self.scene.view presentScene:scene transition:transition];
+    }];
 }
 
 @end

@@ -19,6 +19,9 @@
 }
 
 - (void)moveToPoint:(CGPoint)pos {
+    [self moveToPoint:pos completion:nil];
+}
+- (void)moveToPoint:(CGPoint)pos completion:(void (^)(void))completion {
     if ([self hasActions]) return;
     
     float timeX = 0.15 * ABS(pos.x - self.position.x);
@@ -26,7 +29,7 @@
     
     NSArray * actions = @[[SKAction moveToX:pos.x duration:timeX],
                           [SKAction moveToY:pos.y duration:timeY]];
-    [self runAction:[SKAction sequence:actions]];
+    [self runAction:[SKAction sequence:actions] completion:completion];
 }
 
 @end

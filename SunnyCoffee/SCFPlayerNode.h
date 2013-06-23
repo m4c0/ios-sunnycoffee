@@ -11,5 +11,6 @@
 @interface SCFPlayerNode : SKSpriteNode
 
 - (void)moveToPoint:(CGPoint)pos;
+- (void)moveToPoint:(CGPoint)pos completion:(void(^)(void))completion;
 
 @end
