@@ -14,7 +14,7 @@
     if (self = [super initWithSize:size]) {
         SKTexture * backTexture = [SKTexture textureWithImageNamed:@"Character Cat Girl.png"];
         
-        SKSpriteNode * backSprite = [SKSpriteNode spriteNodeWithTexture:backTexture size:self.size];
+        SKSpriteNode * backSprite = [SKSpriteNode spriteNodeWithTexture:backTexture size:CGSizeMake(1, 1)];
         backSprite.position = CGPointMake(self.size.width / 2, self.size.height / 2);
         [self addChild:backSprite];
     }
