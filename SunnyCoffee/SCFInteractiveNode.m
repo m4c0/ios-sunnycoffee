@@ -8,6 +8,8 @@
 
 #import "SCFInteractiveNode.h"
 
+#import "SCFPlayerNode.h"
+
 @implementation SCFInteractiveNode
 
 - (id)init {
@@ -16,6 +18,17 @@
         self.size = CGSizeMake(1, 4);
     }
     return self;
+}
+
+- (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
+    if ([touches count] != 1) return;
+    
+    SKNode * player = [self.scene childNodeWithName:@"player"];
+    
+    CGPoint pos = [self.parent convertPoint:self.position toNode:player.parent];
+    pos.y -= 2;
+    
+    [(SCFPlayerNode *)player moveToPoint:pos];
 }
 
 @end
