@@ -8,6 +8,7 @@
 
 #import "SCFInteractiveNode.h"
 
+#import "SCFInteractiveScene.h"
 #import "SCFPlayerNode.h"
 
 @implementation SCFInteractiveNode
@@ -29,10 +30,10 @@
     pos.y -= 2;
     
     [(SCFPlayerNode *)player moveToPoint:pos completion:^{
-        SKScene * scene = [SKScene sceneWithSize:self.scene.size];
+        SKScene * scene = [SCFInteractiveScene sceneWithSize:self.scene.size];
 
-        SKTransition * transition = [SKTransition pushWithDirection:SKTransitionDirectionLeft
-                                                           duration:0.3];
+        SKTransition * transition = [SKTransition pushWithDirection:SKTransitionDirectionDown
+                                                           duration:0.5];
         [self.scene.view presentScene:scene transition:transition];
     }];
 }

@@ -10,6 +10,8 @@
 
 #import "SCFCoffeeShopScene.h"
 
+#import "SCFInteractiveScene.h"
+
 @implementation SCFViewController
 
 - (void)viewDidLoad {
@@ -21,7 +23,7 @@
     skView.showsNodeCount = YES;
     
     // Create and configure the scene.
-    SKScene * scene = [SCFCoffeeShopScene sceneWithSize:CGSizeMake(10, 16)];
+    SKScene * scene = [SCFInteractiveScene sceneWithSize:CGSizeMake(10, 16)];
     scene.scaleMode = SKSceneScaleModeFill;
     
     // Present the scene.
