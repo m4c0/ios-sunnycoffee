@@ -125,13 +125,13 @@
 			children = (
 				44CB32141777355E004B4F1C /* SCFAppDelegate.h */,
 				44CB32151777355E004B4F1C /* SCFAppDelegate.m */,
-				44CB32171777355E004B4F1C /* Main_iPhone.storyboard */,
-				44CB321A1777355E004B4F1C /* Main_iPad.storyboard */,
 				44CB321D1777355E004B4F1C /* SCFViewController.h */,
 				44CB321E1777355E004B4F1C /* SCFViewController.m */,
 				44CB32201777355E004B4F1C /* SCFMyScene.h */,
 				44CB32211777355E004B4F1C /* SCFMyScene.m */,
 				44CB32231777355E004B4F1C /* Spaceship.png */,
+				44CB32171777355E004B4F1C /* Main_iPhone.storyboard */,
+				44CB321A1777355E004B4F1C /* Main_iPad.storyboard */,
 				44CB32251777355E004B4F1C /* Images.xcassets */,
 				44CB320C1777355E004B4F1C /* Supporting Files */,
 			);

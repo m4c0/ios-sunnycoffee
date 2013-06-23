@@ -35,7 +35,7 @@
         CGPoint location = [touch locationInNode:self];
         
         SKSpriteNode *sprite = [SKSpriteNode spriteNodeWithImageNamed:@"Spaceship"];
-        
+        sprite.size = CGSizeMake(32, 32);
         sprite.position = location;
         
         SKAction *action = [SKAction rotateByAngle:M_PI duration:1];
