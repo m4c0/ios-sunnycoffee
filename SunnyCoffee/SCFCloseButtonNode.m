@@ -20,7 +20,6 @@
 - (void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event {
     SKTransition * transition = [SKTransition pushWithDirection:SKTransitionDirectionUp
                                                        duration:0.5];
-    NSLog(@"%@", self.previousScene);
     [self.scene.view presentScene:self.previousScene transition:transition];
 }
 
