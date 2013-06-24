@@ -14,11 +14,17 @@
 
 - (instancetype)initWithSize:(CGSize)size {
     if (self = [super initWithSize:size]) {
-        SKNode * close = [SCFCloseButtonNode new];
-        close.position = CGPointMake(0.5, 15);
-        [self addChild:close];
     }
     return self;
+}
+
+- (void)didMoveToView:(SKView *)view {
+    if ([[self children] count]) return;
+    
+    SCFCloseButtonNode * close = [SCFCloseButtonNode new];
+    close.previousScene = self.previousScene;
+    close.position = CGPointMake(0.5, 15);
+    [self addChild:close];
 }
 
 @end

@@ -10,4 +10,6 @@
 
 @interface SCFInteractiveScene : SKScene
 
+@property (nonatomic,strong) SKScene * previousScene;
+
 @end

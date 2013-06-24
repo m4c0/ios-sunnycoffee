@@ -10,4 +10,6 @@
 
 @interface SCFCloseButtonNode : SKSpriteNode
 
+@property (nonatomic,strong) SKScene * previousScene;
+
 @end
