@@ -27,8 +27,14 @@
     float timeX = 0.15 * ABS(pos.x - self.position.x);
     float timeY = 0.10 * ABS(pos.y - self.position.y);
     
+    NSArray * yActions = @[[SKAction moveToY:pos.y duration:timeY],
+                           [SKAction customActionWithDuration:timeY
+                                                  actionBlock:^(SKNode *node, CGFloat elapsedTime) {
+                                                      node.zPosition = node.position.y - 14;
+                                                  }]];
+    
     NSArray * actions = @[[SKAction moveToX:pos.x duration:timeX],
-                          [SKAction moveToY:pos.y duration:timeY]];
+                          [SKAction group:yActions]];
     [self runAction:[SKAction sequence:actions] completion:completion];
 }
 

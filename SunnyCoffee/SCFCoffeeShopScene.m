@@ -29,6 +29,7 @@
         
         SCFInteractiveNode * chest = [SCFInteractiveNode new];
         chest.position = CGPointMake(2, 7);
+        chest.zPosition = -7;
         [self addChild:chest];
     }
     return self;
