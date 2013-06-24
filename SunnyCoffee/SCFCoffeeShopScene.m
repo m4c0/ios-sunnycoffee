@@ -15,8 +15,10 @@
 
 @implementation SCFCoffeeShopScene
 
-- (instancetype)initWithSize:(CGSize)size {
-    if (self = [super initWithSize:size]) {
+- (id)init {
+    if (self = [super initWithSize:CGSizeMake(10, 16)]) {
+        self.scaleMode = SKSceneScaleModeFill;
+        
         SKSpriteNode * backTile = [SCFFloorTileNode new];
 
         SCFTiledNode * back = [SCFTiledNode tileNodeWithNodeTile:backTile andDimensions:CGSizeMake(9, 5)];

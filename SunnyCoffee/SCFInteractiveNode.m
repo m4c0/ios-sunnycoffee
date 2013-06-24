@@ -30,7 +30,7 @@
     pos.y -= 2;
     
     [(SCFPlayerNode *)player moveToPoint:pos completion:^{
-        SCFInteractiveScene * scene = [SCFInteractiveScene sceneWithSize:self.scene.size];
+        SCFInteractiveScene * scene = [SCFInteractiveScene new];
         scene.previousScene = self.scene;
 
         SKTransition * transition = [SKTransition pushWithDirection:SKTransitionDirectionDown
