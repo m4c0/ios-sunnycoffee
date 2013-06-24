@@ -14,6 +14,7 @@
     if (self = [super initWithImageNamed:@"Character Cat Girl"]) {
         self.name = @"player";
         self.size = CGSizeMake(1, 4);
+        self.anchorPoint = CGPointMake(0.5, 0.5);
     }
     return self;
 }

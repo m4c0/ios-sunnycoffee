@@ -17,6 +17,7 @@
     if (self = [super initWithImageNamed:@"Chest Closed.png"]) {
         self.userInteractionEnabled = YES;
         self.size = CGSizeMake(1, 4);
+        self.anchorPoint = CGPointMake(0.5, 0.5);
     }
     return self;
 }
