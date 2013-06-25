@@ -19,7 +19,7 @@
         for (float x = 0; x < dim.width; x++) {
             for (float y = 0; y < dim.height; y++) {
                 SKNode * clone = [node copy];
-                clone.position = CGPointMake(x - dim.width / 2.0, 2 * (y - dim.height / 2.0));
+                clone.position = CGPointMake(0.5 + x - dim.width / 2.0, 2 * (y - dim.height / 2.0));
                 clone.zPosition = y - dim.height / 2.0;
                 [self addChild:clone];
             }
