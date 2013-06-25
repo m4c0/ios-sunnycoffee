@@ -8,10 +8,27 @@
 
 #import "SCFCloseButtonNode.h"
 
+#define XSIZE 14
+#define ORADIUS 30
+#define OSIZE (2*ORADIUS)
+
 @implementation SCFCloseButtonNode
 
 - (id)init {
-    if (self = [super initWithColor:[SKColor whiteColor] size:CGSizeMake(1, 2)]) {
+    if (self = [super init]) {
+        CGMutablePathRef path = CGPathCreateMutable();
+        CGPathAddEllipseInRect(path, nil, CGRectMake(-ORADIUS, -ORADIUS, OSIZE, OSIZE));
+        
+        CGPoint p0[2] = { CGPointMake(-XSIZE, -XSIZE), CGPointMake(XSIZE, XSIZE) };
+        CGPathAddLines(path, nil, p0, 2);
+        
+        CGPoint p1[2] = { CGPointMake(XSIZE, -XSIZE), CGPointMake(-XSIZE, XSIZE) };
+        CGPathAddLines(path, nil, p1, 2);
+        
+        self.path = path;
+        self.strokeColor = [UIColor whiteColor];
+        self.fillColor = [UIColor blackColor];
+        self.lineWidth = 0.005;
         self.userInteractionEnabled = YES;
     }
     return self;

@@ -13,7 +13,7 @@
 @implementation SCFInteractiveScene
 
 - (id)init {
-    if (self = [super initWithSize:CGSizeMake(10, 16)]) {
+    if (self = [super initWithSize:CGSizeMake(640, 480)]) {
         self.scaleMode = SKSceneScaleModeFill;
     }
     return self;
@@ -24,7 +24,7 @@
     
     SCFCloseButtonNode * close = [SCFCloseButtonNode new];
     close.previousScene = self.previousScene;
-    close.position = CGPointMake(0.5, 15);
+    close.position = CGPointMake(590, 430);
     [self addChild:close];
 }
 

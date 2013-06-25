@@ -8,7 +8,7 @@
 
 #import <SpriteKit/SpriteKit.h>
 
-@interface SCFCloseButtonNode : SKSpriteNode
+@interface SCFCloseButtonNode : SKShapeNode
 
 @property (nonatomic,strong) SKScene * previousScene;
 
