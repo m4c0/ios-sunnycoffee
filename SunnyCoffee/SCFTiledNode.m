@@ -16,6 +16,8 @@
 
 - (id)initWithNodeTile:(SKNode *)node andDimensions:(CGSize)dim {
     if (self = [super init]) {
+        self.name = @"floor";
+
         for (float x = 0; x < dim.width; x++) {
             for (float y = 0; y < dim.height; y++) {
                 SKNode * clone = [node copy];

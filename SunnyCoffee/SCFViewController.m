@@ -9,6 +9,7 @@
 #import "SCFViewController.h"
 
 #import "SCFCoffeeShopScene.h"
+#import "SCFInteractiveScene.h"
 
 @implementation SCFViewController
 
