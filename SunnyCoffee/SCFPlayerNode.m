@@ -31,7 +31,7 @@
     NSArray * yActions = @[[SKAction moveToY:pos.y duration:timeY],
                            [SKAction customActionWithDuration:timeY
                                                   actionBlock:^(SKNode *node, CGFloat elapsedTime) {
-                                                      node.zPosition = node.position.y - 14;
+                                                      node.zPosition = -2 + node.position.y / 2.0;
                                                   }]];
     
     NSArray * actions = @[[SKAction moveToX:pos.x duration:timeX],
