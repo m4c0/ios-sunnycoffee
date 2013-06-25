@@ -12,8 +12,9 @@
 
 @implementation SCFInteractiveScene
 
-- (instancetype)initWithSize:(CGSize)size {
-    if (self = [super initWithSize:size]) {
+- (id)init {
+    if (self = [super initWithSize:CGSizeMake(10, 16)]) {
+        self.scaleMode = SKSceneScaleModeFill;
     }
     return self;
 }

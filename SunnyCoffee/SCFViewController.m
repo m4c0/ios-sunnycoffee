@@ -20,12 +20,8 @@
     skView.showsFPS = YES;
     skView.showsNodeCount = YES;
     
-    // Create and configure the scene.
-    SKScene * scene = [SCFCoffeeShopScene sceneWithSize:CGSizeMake(10, 16)];
-    scene.scaleMode = SKSceneScaleModeFill;
-    
     // Present the scene.
-    [skView presentScene:scene];
+    [(SKView *)self.view presentScene:[SCFCoffeeShopScene new]];
 }
 
 - (BOOL)shouldAutorotate {

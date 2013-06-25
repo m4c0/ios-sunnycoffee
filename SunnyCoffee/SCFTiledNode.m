@@ -16,11 +16,11 @@
 
 - (id)initWithNodeTile:(SKNode *)node andDimensions:(CGSize)dim {
     if (self = [super init]) {
-        for (float x = -dim.width / 2; x < dim.width / 2; x++) {
-            for (float y = dim.height / 2; y >= -dim.height / 2; y--) {
+        for (float x = 0; x < dim.width; x++) {
+            for (float y = 0; y < dim.height; y++) {
                 SKNode * clone = [node copy];
-                clone.position = CGPointMake(x + 0.5, 2 * (y - 0.5));
-                clone.zPosition = y + dim.height / 2;
+                clone.position = CGPointMake(x - dim.width / 2.0, 2 * (y - dim.height / 2.0));
+                clone.zPosition = y - dim.height / 2.0;
                 [self addChild:clone];
             }
         }

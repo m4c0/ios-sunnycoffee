@@ -17,6 +17,7 @@
     if (self = [super initWithImageNamed:@"Chest Closed.png"]) {
         self.userInteractionEnabled = YES;
         self.size = CGSizeMake(1, 4);
+        self.anchorPoint = CGPointMake(0.5, 0.5);
     }
     return self;
 }
@@ -30,7 +31,7 @@
     pos.y -= 2;
     
     [(SCFPlayerNode *)player moveToPoint:pos completion:^{
-        SCFInteractiveScene * scene = [SCFInteractiveScene sceneWithSize:self.scene.size];
+        SCFInteractiveScene * scene = [SCFInteractiveScene new];
         scene.previousScene = self.scene;
 
         SKTransition * transition = [SKTransition pushWithDirection:SKTransitionDirectionDown
