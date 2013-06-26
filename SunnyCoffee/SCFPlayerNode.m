@@ -55,12 +55,9 @@ static inline CGPoint SCFPointSubtract(CGPoint a, CGPoint b) {
     NSMutableSet * closedset = [NSMutableSet new];
     NSMutableSet * openset = [NSMutableSet setWithObject:start];
     NSMutableDictionary * camefrom = [NSMutableDictionary new];
-    
-    NSMutableDictionary * gScore = [NSMutableDictionary new];
-    NSMutableDictionary * fScore = [NSMutableDictionary new];
-    
-    gScore[start] = @0;
-    fScore[start] = @([start distanceToPoint:pos]);
+
+    start.gScore = 0;
+    start.fScore = [start distanceToPoint:pos];
     
     NSArray * fSortDescriptors = @[[NSSortDescriptor sortDescriptorWithKey:@"fScore" ascending:YES]];
     while ([openset count]) {
@@ -79,15 +76,15 @@ static inline CGPoint SCFPointSubtract(CGPoint a, CGPoint b) {
                 continue;
             }
             
-            double tentativeGScore = [gScore[current] doubleValue] + [current distanceToPoint:neighbor.point];
-            if ([closedset containsObject:neighbor] && (tentativeGScore >= [gScore[neighbor] doubleValue])) {
+            double tentativeGScore = current.gScore + [current distanceToPoint:neighbor.point];
+            if ([closedset containsObject:neighbor] && (tentativeGScore >= neighbor.gScore)) {
                 continue;
             }
             
-            if (![openset containsObject:neighbor] || (tentativeGScore < [gScore[neighbor] doubleValue])) {
+            if (![openset containsObject:neighbor] || (tentativeGScore < neighbor.gScore)) {
                 camefrom[neighbor] = current;
-                gScore[neighbor] = @(tentativeGScore);
-                fScore[neighbor] = @([gScore[neighbor] doubleValue] + [neighbor distanceToPoint:pos]);
+                neighbor.gScore = tentativeGScore;
+                neighbor.fScore = neighbor.gScore + [neighbor distanceToPoint:pos];
                 if (![openset containsObject:neighbor]) {
                     [openset addObject:neighbor];
                 }
@@ -95,7 +92,7 @@ static inline CGPoint SCFPointSubtract(CGPoint a, CGPoint b) {
         }
     }
     
-    @throw @"Something terrible happened in A* universe";
+    NSLog(@"Something terrible happened in A* universe");
 }
 
 - (void)buildActionsForPoint:(SCFAStarPoint *)currentNode fromMap:(NSDictionary *)camefrom intoArray:(NSMutableArray *)actions {
