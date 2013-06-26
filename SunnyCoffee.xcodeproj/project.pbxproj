@@ -13,6 +13,7 @@
 		4479E92E1777B2EB00DA3F7B /* SCFPlayerNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4479E92D1777B2EB00DA3F7B /* SCFPlayerNode.m */; };
 		4479E9321777BCD000DA3F7B /* SCFInteractiveScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 4479E9311777BCD000DA3F7B /* SCFInteractiveScene.m */; };
 		4479E9351777C00600DA3F7B /* SCFCloseButtonNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4479E9341777C00600DA3F7B /* SCFCloseButtonNode.m */; };
+		4479E937177AD2EF00DA3F7B /* Chest Closed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4479E936177AD2EF00DA3F7B /* Chest Closed.png */; };
 		44CB32041777355E004B4F1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CB32031777355E004B4F1C /* Foundation.framework */; };
 		44CB32061777355E004B4F1C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CB32051777355E004B4F1C /* CoreGraphics.framework */; };
 		44CB32081777355E004B4F1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CB32071777355E004B4F1C /* UIKit.framework */; };
@@ -48,7 +49,6 @@
 /* Begin PBXFileReference section */
 		44059A931777764F005CD6A6 /* SCFFloorTileNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFFloorTileNode.h; sourceTree = "<group>"; };
 		44059A941777764F005CD6A6 /* SCFFloorTileNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFFloorTileNode.m; sourceTree = "<group>"; };
-		4479E9271777ACD200DA3F7B /* Chest Closed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Chest Closed.png"; path = "../../../../../Downloads/PlanetCute PNG/Chest Closed.png"; sourceTree = "<group>"; };
 		4465A836177A040600291FFA /* SCFAStarPoint.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFAStarPoint.h; sourceTree = "<group>"; };
 		4465A837177A040600291FFA /* SCFAStarPoint.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFAStarPoint.m; sourceTree = "<group>"; };
 		4479E9291777ADA700DA3F7B /* SCFInteractiveNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFInteractiveNode.h; sourceTree = "<group>"; };
@@ -59,6 +59,7 @@
 		4479E9311777BCD000DA3F7B /* SCFInteractiveScene.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFInteractiveScene.m; sourceTree = "<group>"; };
 		4479E9331777C00600DA3F7B /* SCFCloseButtonNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFCloseButtonNode.h; sourceTree = "<group>"; };
 		4479E9341777C00600DA3F7B /* SCFCloseButtonNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFCloseButtonNode.m; sourceTree = "<group>"; };
+		4479E936177AD2EF00DA3F7B /* Chest Closed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chest Closed.png"; sourceTree = "<group>"; };
 		44CB32001777355E004B4F1C /* SunnyCoffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunnyCoffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44CB32031777355E004B4F1C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		44CB32051777355E004B4F1C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -178,7 +179,7 @@
 				44CB321A1777355E004B4F1C /* Main_iPad.storyboard */,
 				44CB3250177746A6004B4F1C /* Brown Block.png */,
 				44CB324E17774339004B4F1C /* Character Cat Girl.png */,
-				4479E9271777ACD200DA3F7B /* Chest Closed.png */,
+				4479E936177AD2EF00DA3F7B /* Chest Closed.png */,
 				44CB32251777355E004B4F1C /* Images.xcassets */,
 				44CB320C1777355E004B4F1C /* Supporting Files */,
 			);
@@ -318,7 +319,7 @@
 			files = (
 				44CB32261777355E004B4F1C /* Images.xcassets in Resources */,
 				44CB324F17774339004B4F1C /* Character Cat Girl.png in Resources */,
-				4479E9281777ACD200DA3F7B /* Chest Closed.png in Resources */,
+				4479E937177AD2EF00DA3F7B /* Chest Closed.png in Resources */,
 				44CB321C1777355E004B4F1C /* Main_iPad.storyboard in Resources */,
 				44CB32191777355E004B4F1C /* Main_iPhone.storyboard in Resources */,
 				44CB32101777355E004B4F1C /* InfoPlist.strings in Resources */,
