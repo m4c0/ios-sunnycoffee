@@ -34,7 +34,7 @@
         [self addChild:chest];
         
         chest = [SCFInteractiveNode new];
-        chest.position = CGPointMake(3, -1);
+        chest.position = CGPointMake(3, -2);
         chest.zPosition = -2;
         [self addChild:chest];
         
