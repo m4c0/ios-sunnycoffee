@@ -40,7 +40,7 @@ static inline CGPoint SCFPointSubtract(CGPoint a, CGPoint b) {
     if (![object isKindOfClass:[SCFAStarPoint class]]) return NO;
     
     SCFAStarPoint * p = object;
-    return p.point.x == self.point.x && p.point.y == self.point.y;
+    return (int)p.point.x == (int)self.point.x && (int)p.point.y == (int)self.point.y;
 }
 
 - (NSUInteger)hash {
