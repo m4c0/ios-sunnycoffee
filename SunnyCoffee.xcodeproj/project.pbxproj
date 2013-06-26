@@ -14,6 +14,7 @@
 		4479E9321777BCD000DA3F7B /* SCFInteractiveScene.m in Sources */ = {isa = PBXBuildFile; fileRef = 4479E9311777BCD000DA3F7B /* SCFInteractiveScene.m */; };
 		4479E9351777C00600DA3F7B /* SCFCloseButtonNode.m in Sources */ = {isa = PBXBuildFile; fileRef = 4479E9341777C00600DA3F7B /* SCFCloseButtonNode.m */; };
 		4479E937177AD2EF00DA3F7B /* Chest Closed.png in Resources */ = {isa = PBXBuildFile; fileRef = 4479E936177AD2EF00DA3F7B /* Chest Closed.png */; };
+		4479E93A177ADF5C00DA3F7B /* SCFAStar.m in Sources */ = {isa = PBXBuildFile; fileRef = 4479E939177ADF5C00DA3F7B /* SCFAStar.m */; };
 		44CB32041777355E004B4F1C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CB32031777355E004B4F1C /* Foundation.framework */; };
 		44CB32061777355E004B4F1C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CB32051777355E004B4F1C /* CoreGraphics.framework */; };
 		44CB32081777355E004B4F1C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 44CB32071777355E004B4F1C /* UIKit.framework */; };
@@ -60,6 +61,8 @@
 		4479E9331777C00600DA3F7B /* SCFCloseButtonNode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFCloseButtonNode.h; sourceTree = "<group>"; };
 		4479E9341777C00600DA3F7B /* SCFCloseButtonNode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFCloseButtonNode.m; sourceTree = "<group>"; };
 		4479E936177AD2EF00DA3F7B /* Chest Closed.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Chest Closed.png"; sourceTree = "<group>"; };
+		4479E938177ADF5C00DA3F7B /* SCFAStar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCFAStar.h; sourceTree = "<group>"; };
+		4479E939177ADF5C00DA3F7B /* SCFAStar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCFAStar.m; sourceTree = "<group>"; };
 		44CB32001777355E004B4F1C /* SunnyCoffee.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SunnyCoffee.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		44CB32031777355E004B4F1C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		44CB32051777355E004B4F1C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -119,6 +122,8 @@
 			children = (
 				4465A836177A040600291FFA /* SCFAStarPoint.h */,
 				4465A837177A040600291FFA /* SCFAStarPoint.m */,
+				4479E938177ADF5C00DA3F7B /* SCFAStar.h */,
+				4479E939177ADF5C00DA3F7B /* SCFAStar.m */,
 			);
 			name = "A*";
 			sourceTree = "<group>";
@@ -342,6 +347,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4479E93A177ADF5C00DA3F7B /* SCFAStar.m in Sources */,
 				44CB32121777355E004B4F1C /* main.m in Sources */,
 				4479E92E1777B2EB00DA3F7B /* SCFPlayerNode.m in Sources */,
 				44CB32161777355E004B4F1C /* SCFAppDelegate.m in Sources */,

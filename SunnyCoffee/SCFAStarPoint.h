@@ -10,7 +10,8 @@
 
 @interface SCFAStarPoint : NSObject<NSCopying>
 
-@property (nonatomic) NSArray * neighbors;
+@property (nonatomic,strong) NSArray * neighbors;
+@property (nonatomic,strong) SCFAStarPoint * camefrom;
 @property (nonatomic) CGPoint point;
 @property (nonatomic) double gScore;
 @property (nonatomic) double fScore;
