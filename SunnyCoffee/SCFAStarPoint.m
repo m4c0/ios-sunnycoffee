@@ -24,7 +24,10 @@ static inline CGPoint SCFPointSubtract(CGPoint a, CGPoint b) {
 #pragma mark - NSCopying
 
 - (id)copyWithZone:(NSZone *)zone {
-    return [[SCFAStarPoint allocWithZone:zone] initWithPoint:self.point];
+    SCFAStarPoint * res = [[SCFAStarPoint allocWithZone:zone] initWithPoint:self.point];
+    res.fScore = self.fScore;
+    res.gScore = self.gScore;
+    return res;
 }
 
 #pragma mark -
